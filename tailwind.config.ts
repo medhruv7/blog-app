@@ -18,10 +18,6 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function({addvariant} : {addvariant: any}) {
-      addvariant('child', '& > *');
-      addvariant('child-hover', '& > *:hover');
-    }),
   ],
 }
 export default config
