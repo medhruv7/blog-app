@@ -12,7 +12,7 @@ export function Providers({
 }) {
   return (
     <SessionProvider>
-      <ThemeProvider>{children}</ThemeProvider>
+      <ThemeProvider enableSystem={false} defaultTheme="dark" attribute="class">{children}</ThemeProvider>
     </SessionProvider>
   );
 }

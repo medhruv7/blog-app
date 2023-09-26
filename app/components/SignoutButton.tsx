@@ -4,13 +4,22 @@ import { signOut, useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
 
 export const SignoutButton = () => {
-  const session = useSession();
-  if (!session) {
+  const { status } = useSession();
+
+  if (status === "unauthenticated") {
     return redirect("/api/auth/signin");
   }
+
   return (
     <div>
-      <button onClick={() => signOut()}>Signout</button>
+      <button
+        onClick={() => {
+          console.log("here");
+          signOut();
+        }}
+      >
+        Signout
+      </button>
     </div>
   );
 };

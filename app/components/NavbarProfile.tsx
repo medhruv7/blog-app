@@ -8,6 +8,10 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export const NavbarProfile = async () => {
   const session = await getServerSession(options);
 
+  if(!session) {
+    return null;
+  }
+  
   return (
     <div className="flex space-x-5 items-center">
       <div>{session?.user?.name}</div>
