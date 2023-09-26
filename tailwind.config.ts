@@ -1,3 +1,4 @@
+import { plugin } from 'postcss';
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -16,6 +17,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addvariant} : {addvariant: any}) {
+      addvariant('child', '& > *');
+      addvariant('child-hover', '& > *:hover');
+    }),
+  ],
 }
 export default config
