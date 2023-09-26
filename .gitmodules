@@ -1,0 +1,3 @@
+[submodule "next-template"]
+	path = next-template
+	url = https://github.com/medhruv7/next-template.git
