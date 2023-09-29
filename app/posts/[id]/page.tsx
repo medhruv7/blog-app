@@ -1,11 +1,11 @@
 import { getPostsById, getPostsIds } from "@/utils/posts";
 
-export const generateStaticParams = async () => {
-  const fileIds = await getPostsIds();
-  return fileIds.map((id) => {
-    id;
-  });
-};
+// export const generateStaticParams = async () => {
+//   const fileIds = await getPostsIds();
+//   return fileIds.map((id) => {
+//     id;
+//   });
+// };
 
 const Home = async ({ params }: { params: { id: string } }) => {
   const { id } = params;
