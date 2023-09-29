@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
 
-export async function Home() {
+const Home = async () => {
   redirect("/posts");
-}
+};
+
+export default Home;
