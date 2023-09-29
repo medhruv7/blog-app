@@ -1,8 +1,5 @@
-1. clone this repo
-2. npm ci
-3. npm run dev
+## Blog App ##
 
-Next Js Template includes the following
+I will be updating blogs on this site regularly with interesting articles.
 
-1. Next-Auth Complete authentication
-2. Navbar
+Feel free to fork this website and request a PR if you feel you can improve this website , it would be more than welcomed.
