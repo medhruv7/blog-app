@@ -7,7 +7,7 @@ export const generateStaticParams = async () => {
   });
 };
 
-export default async ({ params }: { params: { id: string } }) => {
+const Home = async ({ params }: { params: { id: string } }) => {
   const { id } = params;
   const blogData: any = await getPostsById(id);
   return (
@@ -24,3 +24,5 @@ export default async ({ params }: { params: { id: string } }) => {
     </div>
   );
 };
+
+export default Home;
